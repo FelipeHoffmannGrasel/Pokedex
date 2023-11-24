@@ -8,9 +8,14 @@
 </head>
 <body>
     <div id="detail_sidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeDetailSideNav()">&times;</a>
+        <header>
+            <button>adicionar / remover</button>
+            <button id="b_name">pokemon</button>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDetailSideNav()">&times;</a>
+        </header>   
+
     </div>
-    <div id="main"></div>
+    <div id="main">
         <header>
             <h1>Pikadex</h1>
         </header>
@@ -52,6 +57,8 @@
                     let add = document.createElement("button")
                     let details = document.createElement("button")
 
+                    nome.innerText = pokemon.name.toUpperCase()
+
                     img.src = `${pokemon.sprites.front_default}`; 
                     img.width = "100"; 
                     img.height = "100";
@@ -61,11 +68,8 @@
                     details.innerText = `Detalhes`; 
                     details.onclick = function() {
                         openDetailSideNav()
+                    }
 
-                    };
-                    nome.innerText = pokemon.name.toUpperCase()
-
-                    
                     buttons_div.appendChild(add)
                     buttons_div.appendChild(details)
                     pikamon.appendChild(nome)

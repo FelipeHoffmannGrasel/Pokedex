@@ -1,13 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     text-align: center;
 }
 
 header{
+    
     color: black;
     text-align: center;
     top:0;
     left: 0;
     width: 100%;
+}
+
+#main{
+    background: url('fundo_pagina_inicial.jpg') center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #pokemon_div{
@@ -20,6 +34,7 @@ header{
     border-radius: 10px;
     margin: 15px;
     text-align: center;
+    background-color: lightgray;
     -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,1);
     box-shadow: 0px 0px 22px -6px rgba(0,0,0,1);
