@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pikamons</title>
+</head>
+<body>
+    <div id="detail_sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDetailSideNav()">&times;</a>
+    </div>
+    <div id="main"></div>
+        <header>
+            <h1>Pikadex</h1>
+        </header>
+
+        <div id="pokemon_div"></div>
+    </div>
+
+    <script>
+        function openDetailSideNav() {
+            document.getElementById("detail_sidenav").style.width = "100%";
+        }
+
+        function closeDetailSideNav() {
+            document.getElementById("detail_sidenav").style.width = "0";
+        
+        }
+        function openPokedexSideNav() {
+            document.getElementById("pokedex_sidenav").style.width = "100%";
+        }
+
+        function closePokedexSideNav() {
+            document.getElementById("pokedex_sidenav").style.width = "0";
+        }
+
+        fetch(`https://pokeapi.co/api/v2/pokemon/?offset=19/?limit=39`)
+        .then(response => response.json())
+        .then(function(json) {
+            json.results.forEach(data => {
+                fetch(data.url)
+                .then(response => response.json())
+                .then(function(pokemon) {
+                    console.log(pokemon)
+                    let pokemon_div = document.getElementById("pokemon_div")
+
+                    let pikamon = document.createElement("div"); pikamon.id = "pokemon"
+                    let img = document.createElement("img")
+                    let nome = document.createElement("p")
+                    let buttons_div = document.createElement("div")
+                    let add = document.createElement("button")
+                    let details = document.createElement("button")
+
+                    img.src = `${pokemon.sprites.front_default}`; 
+                    img.width = "100"; 
+                    img.height = "100";
+
+                    add.innerText = `Adicionar`; add.style.marginRight = "20px"
+
+                    details.innerText = `Detalhes`; 
+                    details.onclick = function() {
+                        openDetailSideNav()
+
+                    };
+                    nome.innerText = pokemon.name.toUpperCase()
+
+                    
+                    buttons_div.appendChild(add)
+                    buttons_div.appendChild(details)
+                    pikamon.appendChild(nome)
+                    pikamon.appendChild(img)
+                    pikamon.appendChild(buttons_div)
+                    pokemon_div.appendChild(pikamon)
+                })
+            });
+        })
+        .catch(err => console.log("erro: " + err))
+    </script>
+</body>
+</html>
