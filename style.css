@@ -8,12 +8,13 @@ h1 {
 }
 
 header{
-    
     color: black;
     text-align: center;
     top:0;
     left: 0;
     width: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main{
@@ -68,17 +69,20 @@ header{
     left: 0;
     background-color: white; 
     overflow-x: hidden; 
-    padding-top: 60px; 
     transition: 0.5s; 
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
     transition: 0.3s;
+}
+
+.sidenav header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sidenav a:hover {
@@ -86,11 +90,39 @@ header{
 }
 
 .sidenav .closebtn {
-    position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+#details_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#details_img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#details_img img{
+    width: 150px;
+    height: 150px;
+}
+
+#details_status p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#details_status{
+    border: solid black 1px;
+    border-radius: 10px;
 }
 
 #main {
