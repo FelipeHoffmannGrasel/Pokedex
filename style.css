@@ -10,7 +10,6 @@ h1 {
 header{
     color: black;
     text-align: center;
-    top:0;
     left: 0;
     width: 100%;
     font-size: 20px;
@@ -31,7 +30,11 @@ header{
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#pokemon{
+#header_name {
+    margin-top: 20px;
+}
+
+.pokemon{
     border-radius: 10px;
     margin: 15px;
     text-align: center;
@@ -41,19 +44,19 @@ header{
     box-shadow: 0px 0px 22px -6px rgba(0,0,0,1);
 }
 
-#pokemon p{
+.pokemon p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#pokemon button{
+.pokemon button{
     margin: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
 }
 
-#pokemon button:hover{
+.pokemon button:hover{
     margin: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -125,8 +128,66 @@ header{
     border-radius: 10px;
 }
 
+#types{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#types{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#type_div{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#moves{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#move_p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 #main {
     transition: margin-left .5s;
+    padding: 20px;
+}
+
+#main header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#open_pokedex {
+    justify-self: end;
+}
+
+#pokedex_sidenav header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pokedex_sidenav header{
     padding: 20px;
 }
 

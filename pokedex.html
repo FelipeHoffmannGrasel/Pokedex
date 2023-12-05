@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pikamons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
     <div id="detail_sidenav" class="sidenav">
         <header>
-            <button>adicionar / remover</button>
+            <button>adicionar a pokedex</button>
             <p id="header_name">pokemon</p>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeDetailSideNav()">&times;</a>
-        </header>   
+            <a href="javascript:void(0)" class="closebtn" id="detail_closebtn"
+                onclick="closeDetailSideNav()">&times;</a>
+        </header>
 
         <div id="details_body">
             <div id="details_img">
@@ -20,93 +29,36 @@
                 <img id="back_img">
             </div>
             <div id="details_status">
-                <p>Status</p>
+                <p id="title">Status</p>
                 <div id="details_list"></div>
-
             </div>
             <div id="details_types_moves">
-
+                <p id="title">Tipos</p>
+                <div id="types"></div>
+                <p id="title">Movimentos</p>
+                <div id="moves"></div>
             </div>
         </div>
-
     </div>
+
+    <div id="pokedex_sidenav" class="sidenav">
+        <header>
+            <p id="pokedex_h1">Pokedex</p>
+            <a href="javascript:void(0)" class="closebtn" id="detail_closebtn"
+                onclick="closePokedexSideNav()">&times;</a>
+        </header>
+    </div>
+
     <div id="main">
         <header>
             <h1>Pikadex</h1>
+            <button id="open_pokedex" onclick="openPokedexSideNav()">Meus pokemons</button>
         </header>
 
         <div id="pokemon_div"></div>
+
     </div>
-
-    <script>
-        function openDetailSideNav() {
-            document.getElementById("detail_sidenav").style.width = "100%";
-        }
-
-        function closeDetailSideNav() {
-            document.getElementById("detail_sidenav").style.width = "0";
-        
-        }
-        function openPokedexSideNav() {
-            document.getElementById("pokedex_sidenav").style.width = "100%";
-        }
-
-        function closePokedexSideNav() {
-            document.getElementById("pokedex_sidenav").style.width = "0";
-        }
-
-        fetch(`https://pokeapi.co/api/v2/pokemon/?offset=19/?limit=39`)
-        .then(response => response.json())
-        .then(function(json) {
-            json.results.forEach(data => {
-                fetch(data.url)
-                .then(response => response.json())
-                .then(function(pokemon) {
-                    //////////////// pagina inicial /////////////////
-                    let pokemon_div = document.getElementById("pokemon_div")
-                    let pikamon = document.createElement("div"); pikamon.id = "pokemon"
-                    let img = document.createElement("img")
-                    let nome = document.createElement("p")
-                    let buttons_div = document.createElement("div")
-                    let add = document.createElement("button")
-                    let details = document.createElement("button") 
-
-                    nome.innerText = pokemon.name.toUpperCase()
-
-                    img.src = `${pokemon.sprites.front_default}`; 
-                    img.width = "100"; 
-                    img.height = "100";
-                    
-                    ////////////// pagina detalhes /////////////////
-                    details.innerText = `Detalhes`; 
-                    details.onclick = function() {
-                        openDetailSideNav()
-                        document.getElementById("header_name").innerText = pokemon.name.toUpperCase()
-
-                        document.getElementById("front_img").src = `${pokemon.sprites.front_default}` 
-                        document.getElementById("back_img").src = `${pokemon.sprites.back_default}`
-
-                        pokemon.stats.forEach(stats => {
-                            let status = document.createElement("p"); status.id = "div_status"
-                            status.innerHTML = `${stats.stat.name}`
-                            document.getElementById("details_list").appendChild(status)
-                            console.log(stats.stat.name)
-                        })
-                    }
-
-                    ////////////// pagina pokedex //////////////////
-                    add.innerText = `Adicionar`; add.style.marginRight = "20px"
-
-                    buttons_div.appendChild(add)
-                    buttons_div.appendChild(details)
-                    pikamon.appendChild(nome)
-                    pikamon.appendChild(img)
-                    pikamon.appendChild(buttons_div)
-                    pokemon_div.appendChild(pikamon)
-                })
-            });
-        })
-        .catch(err => console.log("erro: " + err))
-    </script>
+    <script src="backend.js"></script>
 </body>
+
 </html>
