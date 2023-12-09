@@ -44,9 +44,11 @@
     <div id="pokedex_sidenav" class="sidenav">
         <header>
             <p id="pokedex_h1">Pokedex</p>
-            <a href="javascript:void(0)" class="closebtn" id="detail_closebtn"
-                onclick="closePokedexSideNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" id="pokedex_closebtn"
+                onclick="closePokedexSideNav(), closeDetailSideNav()">&times;</a>
         </header>
+
+        <div id="pokedex_div"></div>
     </div>
 
     <div id="main">
@@ -55,7 +57,7 @@
             <button id="open_pokedex" onclick="openPokedexSideNav()">Meus pokemons</button>
         </header>
 
-        <div id="pokemon_div"></div>
+        <div id="pokemons_div"></div>
 
         <nav aria-label="Page navigation example">
             <ul class="pagination">
