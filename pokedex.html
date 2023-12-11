@@ -1,73 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Pikamons</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Pikamons</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
 
-    <div id="detail_sidenav" class="sidenav">
-        <header>
-            <button>adicionar a pokedex</button>
-            <p id="header_name">pokemon</p>
-            <a href="javascript:void(0)" class="closebtn" id="detail_closebtn"
-                onclick="closeDetailSideNav()">&times;</a>
-        </header>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 
-        <div id="details_body">
-            <div id="details_img">
-                <img id="front_img">
-                <img id="back_img">
-            </div>
-            <div id="details_status">
-                <p id="title">Status</p>
-                <div id="details_list"></div>
-            </div>
-            <div id="details_types_moves">
-                <p id="title">Tipos</p>
-                <div id="types"></div>
-                <p id="title">Movimentos</p>
-                <div id="moves"></div>
+        <div id="detail_sidenav" class="sidenav">
+            <header>
+                <button>adicionar a pokedex</button>
+                <p id="header_name">pokemon</p>
+                <a href="javascript:void(0)" class="closebtn" id="detail_closebtn"
+                    onclick="closeDetailSideNav()">&times;</a>
+            </header>
+
+            <div id="details_body">
+                <div id="details_img">
+                    <img id="front_img">
+                    <img id="back_img">
+                </div>
+                <div id="details_status">
+                    <h1 id="title">Status</h1>
+                    <div id="details_list"></div>
+                </div>
+                <div id="details_types_moves">
+                    <p id="title">Tipos</p>
+                    <div id="types"></div>
+                    <p id="title">Movimentos</p>
+                    <div id="moves"></div>
+                </div>
             </div>
         </div>
+
+        <div id="pokedex_sidenav" class="sidenav">
+            <header>
+                <p id="pokedex_h1">Pokedex</p>
+                <a href="javascript:void(0)" class="closebtn" id="pokedex_closebtn"
+                    onclick="closePokedexSideNav(), closeDetailSideNav()">&times;</a>
+            </header>
+
+            <div id="pokedex_div"></div>
+        </div>
+
+        <div id="main">
+        <div class="stars"> 
+            <header>
+                <!-- kurby chad = https://i.gifer.com/origin/80/80e2c681d39b1d492a493b47f16f2ba4_w200.webp -->
+                <!-- https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif -->
+                <h1 id="Pokemon_titulo">Pokemons</h1>
+                <button input type="img" id="open_pokedex" onclick="openPokedexSideNav()"><img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.webp" alt=""></button>
+            </header>
+
+            <div id="pokemons_div"></div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" id="previous">Previous</a></li>
+                    <li class="page-item"><a class="page-link" id="next">Next</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
+        <script src="backend.js"></script>
+    </body>
 
-    <div id="pokedex_sidenav" class="sidenav">
-        <header>
-            <p id="pokedex_h1">Pokedex</p>
-            <a href="javascript:void(0)" class="closebtn" id="pokedex_closebtn"
-                onclick="closePokedexSideNav(), closeDetailSideNav()">&times;</a>
-        </header>
-
-        <div id="pokedex_div"></div>
-    </div>
-
-    <div id="main">
-        <header>
-            <h1>Pikadex</h1>
-            <button id="open_pokedex" onclick="openPokedexSideNav()">Meus pokemons</button>
-        </header>
-
-        <div id="pokemons_div"></div>
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" id="previous">Previous</a></li>
-                <li class="page-item"><a class="page-link" id="next">Next</a></li>
-            </ul>
-        </nav>
-
-    </div>
-    <script src="backend.js"></script>
-</body>
-
-</html>
+    </html>
