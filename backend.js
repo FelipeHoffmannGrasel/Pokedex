@@ -73,24 +73,24 @@ function details_data(pokemon) {
 
     // cor de fundo da pagina detalhes
     switch (pokemon.types[0]) {
-        case "fire": document.getElementById("detail_sidenav").style.backgroundImage = "url('https://1.bp.blogspot.com/-yx7Ts5Om1oc/YF6HjOUhphI/AAAAAAAARsY/ZtISgJqMMYQqxjpX30cXpuC-XWrFQNCegCLcBGAsYHQ/s16000/capa-fogo.png')"; break;
-        case "grass": document.getElementById("detail_sidenav").style.backgroundColor = "#9bcc50"; break;
-        case "electric": document.getElementById("detail_sidenav").style.backgroundColor = "#eed535"; break;
-        case "water": document.getElementById("detail_sidenav").style.backgroundColor = "#4592c4"; break;
-        case "ground": document.getElementById("detail_sidenav").style.backgroundColor = "#ab9842"; break;
-        case "rock": document.getElementById("detail_sidenav").style.backgroundColor = "#a38c21"; break;
-        case "fairy": document.getElementById("detail_sidenav").style.backgroundColor = "#fdb9e9"; break;
-        case "poison": document.getElementById("detail_sidenav").style.backgroundColor = "#b97fc9"; break;
-        case "bug": document.getElementById("detail_sidenav").style.backgroundColor = "#729f3f"; break;
-        case "dragon": document.getElementById("detail_sidenav").style.backgroundColor = "#53a4cf"; break;
-        case "psychic": document.getElementById("detail_sidenav").style.backgroundColor = "#f366b9"; break;
-        case "flying": document.getElementById("detail_sidenav").style.backgroundColor = "#bdb9b8"; break;
-        case "fighting": document.getElementById("detail_sidenav").style.backgroundColor = "#d56723"; break;
-        case "normal": document.getElementById("detail_sidenav").style.backgroundColor = "#a4acaf"; break;
-        case "ghost": document.getElementById("detail_sidenav").style.backgroundColor = "#7b62a3"; break;
-        case "steel": document.getElementById("detail_sidenav").style.backgroundColor = "#9eb7b8"; break;
-        case "dark": document.getElementById("detail_sidenav").style.backgroundColor = "#707070"; break;
-        case "ice": document.getElementById("detail_sidenav").style.backgroundColor = "#51c4e7"; break;
+        case "fire": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-fogo.png')"; break;
+        case "grass": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-planta.png')"; break;
+        case "electric": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-eletrico.png')"; break;
+        case "water": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-agua.png')"; break;
+        case "ground": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-terrestre.png')"; break;
+        case "rock": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-pedra.png')"; break;
+        case "fairy": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-fada.png')"; break;
+        case "poison": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-venenoso.png')"; break;
+        case "bug": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-inseto.png')"; break;
+        case "dragon": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-dragão.png')"; break;
+        case "psychic": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-psíquico.png')"; break;
+        case "flying": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-voador.png')"; break;
+        case "fighting": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-lutador.png')"; break;
+        case "normal": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-normal.png')"; break;
+        case "ghost": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-fantasma.png')"; break;
+        case "steel": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-aço.png')"; break;
+        case "dark": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-sombrio.png')"; break;
+        case "ice": document.getElementById("detail_sidenav").style.backgroundImage = "url('img/types/capa-gelo.png')"; break;
     }
 
     // Nome do pokemon na pagina detalhe
@@ -203,24 +203,24 @@ showPokemons = function () {
 
         // cores dos cards
         switch (pokemon.types[0]) {
-            case "fire": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-yx7Ts5Om1oc/YF6HjOUhphI/AAAAAAAARsY/ZtISgJqMMYQqxjpX30cXpuC-XWrFQNCegCLcBGAsYHQ/s16000/capa-fogo.png')"; break;
-            case "grass": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-v3NGm_RBCUo/YF59xsFke0I/AAAAAAAARro/39dQg06EsGoevbcqk35C1PvjOxb2h-fJACLcBGAsYHQ/w1600/capa-planta.png')"; break;
-            case "electric": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-opKwujwn_6s/YE6ucWtSYZI/AAAAAAAARaw/tIn7NkfMD8QIrCydeC9T40HUDqJaTjYTgCLcBGAsYHQ/s16000/pokemon-tipo-eletrico.png')"; break;
-            case "water": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-KieHXRLic1U/YF6EuV7RPoI/AAAAAAAARsI/8NZOovxMOIQCSSkiNoRMbfm_FjObDefJQCLcBGAsYHQ/s16000/capa-agua.png')"; break;
-            case "ground": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-txY30VfqDnk/YF6BcYLyrbI/AAAAAAAARr4/yt7ZF-zgEaQyhPwnW3HWVvmlO1c3CLdPACLcBGAsYHQ/s16000/capa-terrestre.png')"; break;
-            case "rock": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-4ovl8Je905g/YFqQMU8_ZxI/AAAAAAAARpE/qFatY5vc2fIDEtqBA14NRsQ-fUXgShp-wCLcBGAsYHQ/s16000/capa-pedra.png')"; break;
-            case "fairy": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-DMO3sFcaMjg/YFf0FWgfrfI/AAAAAAAARno/EtwYBQkUNzw1idLf8viKBTTeJCNGBoXZwCLcBGAsYHQ/s16000/capa-fada.png')"; break;
-            case "poison": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-iPYs5JUk3SY/YFkpfJbEBNI/AAAAAAAARoA/9WBdGCZBT08zkPXZjj0Hiao-MSww7lphwCLcBGAsYHQ/s16000/capa-venenoso.png')"; break;
-            case "bug": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-wXdSSoxscp8/YFkxtNTVnxI/AAAAAAAARoQ/AHbeYQF09oAWLycmErpvAzEsTaOGM5m2QCLcBGAsYHQ/s16000/capa-inseto.png')"; break;
-            case "dragon": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-HKqr1yDr2rA/YElb41nv6xI/AAAAAAAARZ8/c-AVvfM4PEAx3lAj1ZFbaMjg0TrxZhFzwCLcBGAsYHQ/s16000/capa-drag%25C3%25A3o.png')"; break;
-            case "psychic": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-CUPfS9zcUd4/YFkuv73DqmI/AAAAAAAARoI/epjrslcw2D8vjAJh3YzOZ7YrNIfTmXd2ACLcBGAsYHQ/s16000/capa-ps%25C3%25ADquico.png')"; break;
-            case "flying": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-5CYmRmeZ9lU/YF56TYa6f1I/AAAAAAAARrg/yQivVqEfkVcUlOhn0bJv9KIcnVceywJ7gCLcBGAsYHQ/s16000/capa-voador.png')"; break;
-            case "fighting": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-NeXaV_qBXt4/YFlCLptBOoI/AAAAAAAARow/RPL-VcKvpSwNBZoyVM6cm17JLh04Qk-1wCLcBGAsYHQ/s16000/capa-lutador.png')"; break;
-            case "normal": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/--f7Jcmtmv0Q/YFqMvVdzBRI/AAAAAAAARo8/z-QQS6M3Lvwfnb1uMH2dRSWGIWhiozAXACLcBGAsYHQ/s16000/capa-normal.png')"; break;
-            case "ghost": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-eALvZG55jgo/YFfuzWOS63I/AAAAAAAARng/PDhMZoMa-84uL3Yjcca_yeDB5TrdSCSTACLcBGAsYHQ/s16000/capa-fantasma.png')"; break;
-            case "steel": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-RXlmlQNKRO0/YFk-RYq4PWI/AAAAAAAARoo/FRsmm1_0xUkv_CdHX-lhfDncEgFyAb7eACLcBGAsYHQ/s16000/capa-a%25C3%25A7o.png')"; break;
-            case "dark": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-jVegaHym89M/YFk1fXN5XUI/AAAAAAAARoY/WIcQsPM3kZ8FEIf0Shyfz-qdDlf59N4vQCLcBGAsYHQ/s16000/capa-sombrio.png')"; break;
-            case "ice": pikamon.style.backgroundImage = "url('https://1.bp.blogspot.com/-d_zGMNy_vCE/YFk4md636HI/AAAAAAAARog/xNLHR_oVviE8lpjioFetIpIURUUzYDeIwCLcBGAsYHQ/s16000/capa-gelo.png')"; break;
+            case "fire": pikamon.style.backgroundImage = "url('img/types/capa-fogo.png')"; break;
+            case "grass": pikamon.style.backgroundImage = "url('img/types/capa-planta.png')"; break;
+            case "electric": pikamon.style.backgroundImage = "url('img/types/capa-eletrico.png')"; break;
+            case "water": pikamon.style.backgroundImage = "url('img/types/capa-agua.png')"; break;
+            case "ground": pikamon.style.backgroundImage = "url('img/types/capa-terrestre.png')"; break;
+            case "rock": pikamon.style.backgroundImage = "url('img/types/capa-pedra.png')"; break;
+            case "fairy": pikamon.style.backgroundImage = "url('img/types/capa-fada.png')"; break;
+            case "poison": pikamon.style.backgroundImage = "url('img/types/capa-venenoso.png')"; break;
+            case "bug": pikamon.style.backgroundImage = "url('img/types/capa-inseto.png')"; break;
+            case "dragon": pikamon.style.backgroundImage = "url('img/types/capa-dragão.png')"; break;
+            case "psychic": pikamon.style.backgroundImage = "url('img/types/capa-psíquico.png')"; break;
+            case "flying": pikamon.style.backgroundImage = "url('img/types/capa-voador.png')"; break;
+            case "fighting": pikamon.style.backgroundImage = "url('img/types/capa-lutador.png')"; break;
+            case "normal": pikamon.style.backgroundImage = "url('img/types/capa-normal.png')"; break;
+            case "ghost": pikamon.style.backgroundImage = "url('img/types/capa-fantasma.png')"; break;
+            case "steel": pikamon.style.backgroundImage = "url('img/types/capa-aço.png')"; break;
+            case "dark": pikamon.style.backgroundImage = "url('img/types/capa-sombrio.png')"; break;
+            case "ice": pikamon.style.backgroundImage = "url('img/types/capa-gelo.png')"; break;
         }
 
         // nome do pokemon no card
@@ -323,50 +323,30 @@ showPokemons = function () {
                     )
                 })
 
-            // case "fire": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-yx7Ts5Om1oc/YF6HjOUhphI/AAAAAAAARsY/ZtISgJqMMYQqxjpX30cXpuC-XWrFQNCegCLcBGAsYHQ/s16000/capa-fogo.png')"; break;
-            // case "grass": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-v3NGm_RBCUo/YF59xsFke0I/AAAAAAAARro/39dQg06EsGoevbcqk35C1PvjOxb2h-fJACLcBGAsYHQ/w1600/capa-planta.png')"; break;
-            // case "electric": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-opKwujwn_6s/YE6ucWtSYZI/AAAAAAAARaw/tIn7NkfMD8QIrCydeC9T40HUDqJaTjYTgCLcBGAsYHQ/s16000/pokemon-tipo-eletrico.png')"; break;
-            // case "water": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-KieHXRLic1U/YF6EuV7RPoI/AAAAAAAARsI/8NZOovxMOIQCSSkiNoRMbfm_FjObDefJQCLcBGAsYHQ/s16000/capa-agua.png')"; break;
-            // case "ground": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-txY30VfqDnk/YF6BcYLyrbI/AAAAAAAARr4/yt7ZF-zgEaQyhPwnW3HWVvmlO1c3CLdPACLcBGAsYHQ/s16000/capa-terrestre.png')"; break;
-            // case "rock": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-4ovl8Je905g/YFqQMU8_ZxI/AAAAAAAARpE/qFatY5vc2fIDEtqBA14NRsQ-fUXgShp-wCLcBGAsYHQ/s16000/capa-pedra.png')"; break;
-            // case "fairy": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-DMO3sFcaMjg/YFf0FWgfrfI/AAAAAAAARno/EtwYBQkUNzw1idLf8viKBTTeJCNGBoXZwCLcBGAsYHQ/s16000/capa-fada.png')"; break;
-            // case "poison": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-iPYs5JUk3SY/YFkpfJbEBNI/AAAAAAAARoA/9WBdGCZBT08zkPXZjj0Hiao-MSww7lphwCLcBGAsYHQ/s16000/capa-venenoso.png')"; break;
-            // case "bug": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-wXdSSoxscp8/YFkxtNTVnxI/AAAAAAAARoQ/AHbeYQF09oAWLycmErpvAzEsTaOGM5m2QCLcBGAsYHQ/s16000/capa-inseto.png')"; break;
-            // case "dragon": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-HKqr1yDr2rA/YElb41nv6xI/AAAAAAAARZ8/c-AVvfM4PEAx3lAj1ZFbaMjg0TrxZhFzwCLcBGAsYHQ/s16000/capa-drag%25C3%25A3o.png')"; break;
-            // case "psychic": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-CUPfS9zcUd4/YFkuv73DqmI/AAAAAAAARoI/epjrslcw2D8vjAJh3YzOZ7YrNIfTmXd2ACLcBGAsYHQ/s16000/capa-ps%25C3%25ADquico.png')"; break;
-            // case "flying": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-5CYmRmeZ9lU/YF56TYa6f1I/AAAAAAAARrg/yQivVqEfkVcUlOhn0bJv9KIcnVceywJ7gCLcBGAsYHQ/s16000/capa-voador.png')"; break;
-            // case "fighting": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-NeXaV_qBXt4/YFlCLptBOoI/AAAAAAAARow/RPL-VcKvpSwNBZoyVM6cm17JLh04Qk-1wCLcBGAsYHQ/s16000/capa-lutador.png')"; break;
-            // case "normal": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/--f7Jcmtmv0Q/YFqMvVdzBRI/AAAAAAAARo8/z-QQS6M3Lvwfnb1uMH2dRSWGIWhiozAXACLcBGAsYHQ/s16000/capa-normal.png')"; break;
-            // case "ghost": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-eALvZG55jgo/YFfuzWOS63I/AAAAAAAARng/PDhMZoMa-84uL3Yjcca_yeDB5TrdSCSTACLcBGAsYHQ/s16000/capa-fantasma.png')"; break;
-            // case "steel": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-RXlmlQNKRO0/YFk-RYq4PWI/AAAAAAAARoo/FRsmm1_0xUkv_CdHX-lhfDncEgFyAb7eACLcBGAsYHQ/s16000/capa-a%25C3%25A7o.png')"; break;
-            // case "dark": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-jVegaHym89M/YFk1fXN5XUI/AAAAAAAARoY/WIcQsPM3kZ8FEIf0Shyfz-qdDlf59N4vQCLcBGAsYHQ/s16000/capa-sombrio.png')"; break;
-            // case "ice": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-d_zGMNy_vCE/YFk4md636HI/AAAAAAAARog/xNLHR_oVviE8lpjioFetIpIURUUzYDeIwCLcBGAsYHQ/s16000/capa-gelo.png')"; break;
-
-
                 // div dos botões
                 let buttons_div = document.createElement("div")
 
                 // cor de cada div/pokemon
                 switch (pokemon.types[0]) {
-                    case "fire": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-yx7Ts5Om1oc/YF6HjOUhphI/AAAAAAAARsY/ZtISgJqMMYQqxjpX30cXpuC-XWrFQNCegCLcBGAsYHQ/s16000/capa-fogo.png')"; break;
-                    case "grass": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-v3NGm_RBCUo/YF59xsFke0I/AAAAAAAARro/39dQg06EsGoevbcqk35C1PvjOxb2h-fJACLcBGAsYHQ/w1600/capa-planta.png')"; break;
-                    case "electric": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-opKwujwn_6s/YE6ucWtSYZI/AAAAAAAARaw/tIn7NkfMD8QIrCydeC9T40HUDqJaTjYTgCLcBGAsYHQ/s16000/pokemon-tipo-eletrico.png')"; break;
-                    case "water": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-KieHXRLic1U/YF6EuV7RPoI/AAAAAAAARsI/8NZOovxMOIQCSSkiNoRMbfm_FjObDefJQCLcBGAsYHQ/s16000/capa-agua.png')"; break;
-                    case "ground": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-txY30VfqDnk/YF6BcYLyrbI/AAAAAAAARr4/yt7ZF-zgEaQyhPwnW3HWVvmlO1c3CLdPACLcBGAsYHQ/s16000/capa-terrestre.png')"; break;
-                    case "rock": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-4ovl8Je905g/YFqQMU8_ZxI/AAAAAAAARpE/qFatY5vc2fIDEtqBA14NRsQ-fUXgShp-wCLcBGAsYHQ/s16000/capa-pedra.png')"; break;
-                    case "fairy": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-DMO3sFcaMjg/YFf0FWgfrfI/AAAAAAAARno/EtwYBQkUNzw1idLf8viKBTTeJCNGBoXZwCLcBGAsYHQ/s16000/capa-fada.png')"; break;
-                    case "poison": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-iPYs5JUk3SY/YFkpfJbEBNI/AAAAAAAARoA/9WBdGCZBT08zkPXZjj0Hiao-MSww7lphwCLcBGAsYHQ/s16000/capa-venenoso.png')"; break;
-                    case "bug": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-wXdSSoxscp8/YFkxtNTVnxI/AAAAAAAARoQ/AHbeYQF09oAWLycmErpvAzEsTaOGM5m2QCLcBGAsYHQ/s16000/capa-inseto.png')"; break;
-                    case "dragon": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-HKqr1yDr2rA/YElb41nv6xI/AAAAAAAARZ8/c-AVvfM4PEAx3lAj1ZFbaMjg0TrxZhFzwCLcBGAsYHQ/s16000/capa-drag%25C3%25A3o.png')"; break;
-                    case "psychic": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-CUPfS9zcUd4/YFkuv73DqmI/AAAAAAAARoI/epjrslcw2D8vjAJh3YzOZ7YrNIfTmXd2ACLcBGAsYHQ/s16000/capa-ps%25C3%25ADquico.png')"; break;
-                    case "flying": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-5CYmRmeZ9lU/YF56TYa6f1I/AAAAAAAARrg/yQivVqEfkVcUlOhn0bJv9KIcnVceywJ7gCLcBGAsYHQ/s16000/capa-voador.png')"; break;
-                    case "fighting": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-NeXaV_qBXt4/YFlCLptBOoI/AAAAAAAARow/RPL-VcKvpSwNBZoyVM6cm17JLh04Qk-1wCLcBGAsYHQ/s16000/capa-lutador.png')"; break;
-                    case "normal": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/--f7Jcmtmv0Q/YFqMvVdzBRI/AAAAAAAARo8/z-QQS6M3Lvwfnb1uMH2dRSWGIWhiozAXACLcBGAsYHQ/s16000/capa-normal.png')"; break;
-                    case "ghost": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-eALvZG55jgo/YFfuzWOS63I/AAAAAAAARng/PDhMZoMa-84uL3Yjcca_yeDB5TrdSCSTACLcBGAsYHQ/s16000/capa-fantasma.png')"; break;
-                    case "steel": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-RXlmlQNKRO0/YFk-RYq4PWI/AAAAAAAARoo/FRsmm1_0xUkv_CdHX-lhfDncEgFyAb7eACLcBGAsYHQ/s16000/capa-a%25C3%25A7o.png')"; break;
-                    case "dark": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-jVegaHym89M/YFk1fXN5XUI/AAAAAAAARoY/WIcQsPM3kZ8FEIf0Shyfz-qdDlf59N4vQCLcBGAsYHQ/s16000/capa-sombrio.png')"; break;
-                    case "ice": poke_div.style.backgroundImage = "url('https://1.bp.blogspot.com/-d_zGMNy_vCE/YFk4md636HI/AAAAAAAARog/xNLHR_oVviE8lpjioFetIpIURUUzYDeIwCLcBGAsYHQ/s16000/capa-gelo.png')"; break;
-        }
+                    case "fire": poke_div.style.backgroundImage = "url('img/types/capa-fogo.png')"; break;
+                    case "grass": poke_div.style.backgroundImage = "url('img/types/capa-planta.png')"; break;
+                    case "electric": poke_div.style.backgroundImage = "url('img/types/capa-eletrico.png')"; break;
+                    case "water": poke_div.style.backgroundImage = "url('img/types/capa-agua.png')"; break;
+                    case "ground": poke_div.style.backgroundImage = "url('img/types/capa-terrestre.png')"; break;
+                    case "rock": poke_div.style.backgroundImage = "url('img/types/capa-pedra.png')"; break;
+                    case "fairy": poke_div.style.backgroundImage = "url('img/types/capa-fada.png')"; break;
+                    case "poison": poke_div.style.backgroundImage = "url('img/types/capa-venenoso.png')"; break;
+                    case "bug": poke_div.style.backgroundImage = "url('img/types/capa-inseto.png')"; break;
+                    case "dragon": poke_div.style.backgroundImage = "url('img/types/capa-dragão.png')"; break;
+                    case "psychic": poke_div.style.backgroundImage = "url('img/types/capa-psíquico.png')"; break;
+                    case "flying": poke_div.style.backgroundImage = "url('img/types/capa-voador.png')"; break;
+                    case "fighting": poke_div.style.backgroundImage = "url('img/types/capa-lutador.png')"; break;
+                    case "normal": poke_div.style.backgroundImage = "url('img/types/capa-normal.png')"; break;
+                    case "ghost": poke_div.style.backgroundImage = "url('img/types/capa-fantasma.png')"; break;
+                    case "steel": poke_div.style.backgroundImage = "url('img/types/capa-aço.png')"; break;
+                    case "dark": poke_div.style.backgroundImage = "url('img/types/capa-sombrio.png')"; break;
+                    case "ice": poke_div.style.backgroundImage = "url('img/types/capa-gelo.png')"; break;
+                }
 
                 //monta cada div e adiciona no body da pagina
                 buttons_div.appendChild(remover)

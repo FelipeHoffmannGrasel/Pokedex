@@ -36,7 +36,7 @@ header{
 }
 
 #main{
-    background: url('https://i.pinimg.com/originals/0d/05/20/0d05201572964220c7c3b6ceab245bd8.gif') center center no-repeat fixed; 
+    background: url('img/fundo_pag_inicial.gif') center center no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -116,13 +116,13 @@ header{
     background-color: #4CAF50;
     color: #FFF;
     transition: all 0.3s;
-  }
-  
-  .pokemon button span {
+}
+
+.pokemon button span {
     transition: all 0.3s;
-  }
-  
-  .pokemon button::before {
+}  
+
+.pokemon button::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -139,16 +139,16 @@ header{
     border-top-color: rgba(0, 0, 0, 0.5);
     border-bottom-color: rgba(0, 0, 0, 0.5);
     transform: scale(0.1, 1);
-  }
-  
+}
 
-  
-  .pokemon button:hover::before {
+
+
+.pokemon button:hover::before {
     opacity: 1; 
     transform: scale(1, 1); 
-  }
-  
-  .pokemon button::after {
+}
+
+.pokemon button::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,18 +158,18 @@ header{
     z-index: 1;
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
-  }
-  
-  .pokemon button:hover::after {
+}
+
+.pokemon button:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
-  }
-  
-  .pokemon button:hover {
+}
+
+.pokemon button:hover {
     color: #020202;
     background-color: #4CAF50;
-  }
-  
+}
+
 
 .sidenav {
     height: 100%; 
@@ -252,9 +252,6 @@ header{
     background-color: #4CAF50;
 }
 
-
-
-
 .sidenav a {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
@@ -313,6 +310,7 @@ header{
     border: solid black 1px;
     border-radius: 10px;
 }
+
 /*TIPO DO PKEMON PAGINA DETALHES */
 #type_div{
     font-size: 14px;
@@ -324,12 +322,14 @@ header{
     border: solid black 1px;
     border-radius: 10px;
 }
+
 /* MOVIMENTOS DO POKEMON /  DETALHES*/
 #move_p{
     font-size: 14px;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
+
 /* TITULO, TIPOS E MOVIMENTOS */
 #title{
     font-size: 18px;
@@ -363,7 +363,6 @@ header{
     background-color: none;
     border: none;
 }
-  
 
 /* PARTE DA POKEDEX DEPOIS ONDE ADICIONA OS POKEMON*/
 #pokedex_sidenav header{
@@ -379,7 +378,7 @@ header{
 }
 
 #pokedex_sidenav{
-    background: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs2/167364920/original/8d901e27d4397f520939d1c9c7dee5bd00f485cc/creating-pokemon-fan-art.jpg') center center no-repeat fixed; 
+    background: url('img/fundo_pag_pokedex.webp') center center no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -390,6 +389,14 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+#detail_sidenav{
+    background: center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #remove, #detalhes{
@@ -583,13 +590,13 @@ header{
     100% {
       color: #729f3f; /* Cor correspondente a "bug" */
     }
-  }
-  
-  #detail_sidenav #header_name {
+}
+
+#detail_sidenav #header_name {
     animation: multicolorBlink 4s infinite; /* Ajuste a duração conforme necessário */
-  }
-  
-  @keyframes darkColorBlink {
+}
+
+@keyframes darkColorBlink {
     0% {
       color: #6d271e; /* Cor mais escura correspondente a "fire" */
     }
@@ -617,16 +624,16 @@ header{
     100% {
       color: #3a4b27; /* Cor mais escura correspondente a "bug" */
     }
-  }
-  
-  #Pokemon_titulo {
+}
+
+#Pokemon_titulo {
     animation: darkColorBlink 4s infinite; /* Ajuste a duração conforme necessário */
-  }
-  
-  #pokedex_sidenav, #pokedex_h1 {
+}
+
+#pokedex_sidenav, #pokedex_h1 {
     animation: darkColorBlink 4s infinite; /* Ajuste a duração conforme necessário */
-  }
-  
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
