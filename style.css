@@ -61,6 +61,8 @@ header{
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
     position: relative;
+    justify-self: center;
+    align-self: center;
     width: 230px;
     height: 230px;
     border: 5px solid #000; /* Adicionando uma borda sólida preta simulando pixels */
