@@ -36,7 +36,7 @@ header{
 }
 
 #main{
-    background: url('img/fundo_pag_inicial.gif') center center no-repeat fixed; 
+    background: url('https://picstatio.com/large/nzzi06/pokemon-minimalism-wallpaper.png') center center no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,6 +100,7 @@ header{
 } */
 
 .pokemon button {
+    border-radius: 5px;
     margin-top: 8px;
     font-family: 'Press Start 2P', cursive;
     font-size: 11px;
@@ -113,7 +114,7 @@ header{
     margin-bottom: 10px;
     position: relative;
     border: none;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: #FFF;
     transition: all 0.3s;
 }
@@ -123,6 +124,7 @@ header{
 }  
 
 .pokemon button::before {
+    border-radius: 5px;
     content: '';
     position: absolute;
     bottom: 0;
@@ -199,7 +201,7 @@ header{
     margin-bottom: 10px;
     position: relative;
     border: none;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: #FFF;
     transition: all 0.3s;
 }
@@ -238,6 +240,7 @@ header{
     width: 100%;
     height: 100%;
     z-index: 1;
+    border-radius: 5px;
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -378,7 +381,7 @@ header{
 }
 
 #pokedex_sidenav{
-    background: url('img/fundo_pag_pokedex.webp') center center no-repeat fixed; 
+    background: url('img/pikamorta.gif') center center no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -387,9 +390,10 @@ header{
 
 #pokedex_div{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 
 #detail_sidenav{
     background: center center no-repeat fixed;
@@ -511,23 +515,25 @@ header{
 
 #remove,
 #detalhes {
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-    margin-top: 20px;
+    width: 140px;
+    height: 22px;
+    font-size: 12px;
+    margin-top: 6px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#remove:hover,
 #detalhes:hover {
     background-color: #388e3c;
 }
 
+#remove:hover{
+    background-color: red;
+}
 
 #detail_sidenav header {
     display: grid;
@@ -598,31 +604,31 @@ header{
 
 @keyframes darkColorBlink {
     0% {
-      color: #6d271e; /* Cor mais escura correspondente a "fire" */
+      color: #fd7d24; /* Cor correspondente a "fire" */
     }
     12.5% {
-      color: #4b6e34; /* Cor mais escura correspondente a "grass" */
+      color: #9bcc50; /* Cor correspondente a "grass" */
     }
     25% {
-      color: #5c512f; /* Cor mais escura correspondente a "electric" */
+      color: #eed535; /* Cor correspondente a "electric" */
     }
     37.5% {
-      color: #2f4e69; /* Cor mais escura correspondente a "water" */
+      color: #4592c4; /* Cor correspondente a "water" */
     }
     50% {
-      color: #594c28; /* Cor mais escura correspondente a "ground" */
+      color: #ab9842; /* Cor correspondente a "ground" */
     }
     62.5% {
-      color: #504718; /* Cor mais escura correspondente a "rock" */
+      color: #a38c21; /* Cor correspondente a "rock" */
     }
     75% {
-      color: #6f396a; /* Cor mais escura correspondente a "fairy" */
+      color: #fdb9e9; /* Cor correspondente a "fairy" */
     }
     87.5% {
-      color: #58396c; /* Cor mais escura correspondente a "poison" */
+      color: #b97fc9; /* Cor correspondente a "poison" */
     }
     100% {
-      color: #3a4b27; /* Cor mais escura correspondente a "bug" */
+      color: #729f3f; /* Cor correspondente a "bug" */
     }
 }
 
@@ -634,6 +640,53 @@ header{
     animation: darkColorBlink 4s infinite; /* Ajuste a duração conforme necessário */
 }
 
+/* Estilização para a navegação (pagination) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#previous, #next {
+    font-family: 'Press Start 2P', cursive; 
+}
+
+/* Efeito de mudança de cor nas palavras "Previous" e "Next" */
+#previous, #next {
+    animation: colorBlink 4s infinite; 
+    background-color: rgb(0, 123, 255); 
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* Efeito de mudança de cor */
+@keyframes colorBlink {
+    0% {
+        color: #ff00b3;
+    }
+    25% {
+        color: #f10000;
+    }
+    50% {
+        color: #ffc800;
+    }
+    75% {
+        color: #00ff0d;
+    }
+    100% {
+        color: #ff0099;
+    }
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
