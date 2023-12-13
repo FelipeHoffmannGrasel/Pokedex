@@ -563,9 +563,9 @@ header{
 #detail_sidenav header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade conforme necessário */
-    padding: 10px; /* Reduza a altura ajustando o valor de padding */
-    backdrop-filter: blur(5px); /* Adiciona um desfoque para suavizar a transição */
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    backdrop-filter: blur(5px); 
 }
 
 #detail_sidenav #header_name {
@@ -593,68 +593,68 @@ header{
 }
 
 @keyframes multicolorBlink {
-    0% {
-      color: #ff6a00; 
+        0% {
+        color: #ff6a00; 
+        }
+        12.5% {
+        color: #97fc00; 
+        }
+        25% {
+        color: #ffdd00; 
+        }
+        37.5% {
+        color: #0099ff; 
+        }
+        50% {
+        color: #ffd000; 
+        }
+        62.5% {
+        color: #ffd000; 
+        }
+        75% {
+        color: #ff00b3; 
+        }
+        87.5% {
+        color: #c800ff; 
+        }
+        100% {
+        color: #88ff00; 
+        }
     }
-    12.5% {
-      color: #97fc00; 
-    }
-    25% {
-      color: #ffdd00; 
-    }
-    37.5% {
-      color: #0099ff; 
-    }
-    50% {
-      color: #ffd000; 
-    }
-    62.5% {
-      color: #ffd000; 
-    }
-    75% {
-      color: #ff00b3; 
-    }
-    87.5% {
-      color: #c800ff; 
-    }
-    100% {
-      color: #88ff00; 
-    }
-}
 
 #detail_sidenav #header_name {
-    animation: multicolorBlink 4s infinite; 
-}
+        animation: multicolorBlink 4s infinite; 
+    }
 
 @keyframes darkColorBlink {
-    0% {
-      color: #fd7d24;
+        0% {
+        color: #fd7d24;
+        }
+        12.5% {
+        color: #9bcc50;
+        }
+        25% {
+        color: #eed535; 
+        }
+        37.5% {
+        color: #4592c4; 
+        }
+        50% {
+        color: #ab9842; 
+        }
+        62.5% {
+        color: #a38c21; 
+        }
+        75% {
+        color: #fdb9e9; 
+        }
+        87.5% {
+        color: #b97fc9; 
+        }
+        100% {
+        color: #729f3f;
+        }
     }
-    12.5% {
-      color: #9bcc50;
-    }
-    25% {
-      color: #eed535; 
-    }
-    37.5% {
-      color: #4592c4; 
-    }
-    50% {
-      color: #ab9842; 
-    }
-    62.5% {
-      color: #a38c21; 
-    }
-    75% {
-      color: #fdb9e9; 
-    }
-    87.5% {
-      color: #b97fc9; 
-    }
-    100% {
-      color: #729f3f;
-    }
-}
 
 #Pokemon_titulo, .pokemon p {
     animation: darkColorBlink 4s infinite;
@@ -695,7 +695,7 @@ header{
     border-radius: 10px;
 }
 
-/* Efeito de mudança de cor */
+/* Efeito de mudança de cor teste*/
 @keyframes colorBlink {
     0% {
         color: #ff00b3;
