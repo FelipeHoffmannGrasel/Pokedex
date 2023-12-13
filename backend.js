@@ -400,4 +400,4 @@ showPokemons = function () {
         pikamon.appendChild(buttons_div)
         pokemon_div.appendChild(pikamon)
     })
-}
+} 
